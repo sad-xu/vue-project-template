@@ -36,7 +36,7 @@
 		},
 		methods: {
 			getListData() {
-				request.getBoardData().then(res => {
+				return request.getBoardData().then(res => {
 					this.listData = res.data
 				}).catch(err => {
 					console.log('err: ', err)
