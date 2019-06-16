@@ -1,7 +1,31 @@
-# vue-cli3-detailed-example
+# vue-project-template
 
-## 基于Vue CLI 3项目的详细实践
+## 环境
 
-jest 
+node v8.11.0+
 
-eslint-config-standard
+推荐安装 nvm-windows 
+
+npm install --registry=https://registry.npm.taobao.org
+
+---
+
+## 插件
+
+* Babel
+* Router
+* Vuex
+* CSS Pre-processors
+    ndoe-sass
+* Linter/Formatter 
+    eslint + standard config
+* Unit Testing
+    jest
+* E2E Testing
+    cypress
+
+## 提交规范
+
+cnpm install -g commitizen
+commitizen init cz-conventional-changelog --save --save-exact
+

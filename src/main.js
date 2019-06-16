@@ -1,16 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
-import store from './store'
+import router from './router/router.js'
+import store from './store/store.js'
 
-import 'normalize.css/normalize.css'
+import * as filters from './utils/filter.js'
 
-// import Element from 'element-ui'
-// import 'element-ui/lib/theme-chalk/index.css'
-// import "./assets/iconfont/iconfont.css"
-import '@/styles/index.scss'
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 
-// Vue.use(Element)
 Vue.config.productionTip = false
 
 new Vue({
