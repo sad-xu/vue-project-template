@@ -6,9 +6,9 @@ node v8.11.0+
 
 推荐安装 nvm-windows 
 
+```bash
 npm install --registry=https://registry.npm.taobao.org
-
----
+```
 
 ## 插件
 
@@ -16,9 +16,9 @@ npm install --registry=https://registry.npm.taobao.org
 * Router
 * Vuex
 * CSS Pre-processors
-    ndoe-sass
+    node-sass
 * Linter/Formatter 
-    eslint + standard config
+    standard config + eslint-plugin-vue
 * Unit Testing
     jest
 * E2E Testing
@@ -26,6 +26,11 @@ npm install --registry=https://registry.npm.taobao.org
 
 ## 提交规范
 
+```bash
 cnpm install -g commitizen
 commitizen init cz-conventional-changelog --save --save-exact
+```
+
+## 代码规范
+
 

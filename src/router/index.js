@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Layout from '@/layout/layout.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -9,8 +11,17 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/views/Home.vue')
+      component: Layout,
+      children: [
+        {
+          path: 'home',
+          name: 'Home',
+          component: () => import('@/views/Home.vue'),
+          meta: {
+            title: '首页'
+          }
+        }
+      ]
     },
     {
       path: '/about',
