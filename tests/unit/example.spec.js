@@ -2,7 +2,7 @@ import * as filters from '@/utils/filters.js'
 
 describe('testFilter', () => {
   it('testFilter-1', () => {
-    expect(filters.testFilter('a')).toBe('atest')
+    expect(filters.testFilter('a')).toBe('btest')
   })
 })
 
