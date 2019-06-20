@@ -32,13 +32,35 @@ git cz
     * 不超过50个字符
     * 首字母小写
     * 结尾不加标点
-    * 尽量动词开头,一般现在时 fix/update/add/remove/complete...
 
 4. 具体描述(skip)
 
 5. 是否有breaking changes 默认回车No
 
 6. 是否会影响到某些issue 默认回车No
+
+## 自定义简化版
+
+```bash
+cnpm i cz-customizable
+# 增加.cz-config.js
+```
+
+```json
+{
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
+```
+
+1. 选择类型
+
+2. 简短描述
+
+3. 确认
 
 
 ## 强制规范
