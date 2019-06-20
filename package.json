@@ -2,35 +2,25 @@
   "name": "vue-project-template",
   "version": "0.1.0",
   "description": "A project template based on vue-cli3 and element-ui",
-  "author": {
-    "name": "sad-xu",
-    "email": "1031568754@qq.com",
-    "url": "https://github.com/sad-xu"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sad-xu/vue-project-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sad-xu/vue-project-template/issues"
-  },
   "scripts": {
-    "dev": "vue-cli-service serve",
+    "dev": "vue-cli-service serve --mode development",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "0.18.0",
     "core-js": "^2.6.5",
+    "element-ui": "2.9.0",
+    "normalize.css": "7.0.0",
+    "nprogress": "0.2.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-plugin-e2e-cypress": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-plugin-unit-jest": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
@@ -58,25 +48,37 @@
       "@vue/standard"
     ],
     "rules": {
-      "vue/max-attributes-per-line": [2, {
-        "singleline": 4,
-        "multiline": {
-          "max": 3,
-          "allowFirstLine": false
+      "vue/max-attributes-per-line": [
+        2,
+        {
+          "singleline": 4,
+          "multiline": {
+            "max": 3,
+            "allowFirstLine": false
+          }
         }
-      }],
-      "vue/html-closing-bracket-newline": [2, {
-        "singleline": "never",
-        "multiline": "never"
-      }],
-      "vue/html-self-closing": ["error", {
-        "html": {
-          "normal": "never",
-          "component": "never"
+      ],
+      "vue/html-closing-bracket-newline": [
+        2,
+        {
+          "singleline": "never",
+          "multiline": "never"
         }
-      }],
+      ],
+      "vue/html-self-closing": [
+        "error",
+        {
+          "html": {
+            "normal": "never",
+            "component": "never"
+          }
+        }
+      ],
       "standard/no-callback-literal": 0,
-      "space-before-function-paren": ["error", "never"],
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ],
       "handle-callback-err": 0
     },
     "parserOptions": {
@@ -133,7 +135,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-customizable"
     }
   }
 }
