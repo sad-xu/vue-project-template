@@ -1,3 +1,3 @@
 export function testFilter(v) {
-  return v + 'test'
+  return v + 'atest'
 }

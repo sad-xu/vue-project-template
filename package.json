@@ -129,8 +129,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      "vue-cli-service lint",
-      "npm run test"
+      "vue-cli-service lint"
     ]
   },
   "config": {
